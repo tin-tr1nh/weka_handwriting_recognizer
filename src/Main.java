@@ -58,7 +58,7 @@ public class Main {
         // end attribute
         // get image
         double[] bufferedImage = ImageHandler.getImageFromFile("data/number2.png");
-        Instance iExample = new DenseInstance(257);
+        Instance iExample = new Instance(257);
         for (int i = 0; i < 256; i++) {
             //System.out.println(i);
             iExample.setValue((Attribute) fvAttributeDigits.elementAt(i), bufferedImage[i]);

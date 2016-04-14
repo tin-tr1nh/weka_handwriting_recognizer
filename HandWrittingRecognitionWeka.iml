@@ -8,6 +8,5 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="weka" level="project" />
-    <orderEntry type="library" name="weka1" level="project" />
   </component>
 </module>
