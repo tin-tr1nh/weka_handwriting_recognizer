@@ -33,12 +33,10 @@ public class ANN {
         mModel.setLearningRate(0.1);
         mModel.setMomentum(0.2);
         mModel.setTrainingTime(2000);
-        mModel.setHiddenLayers("5");
+        mModel.setHiddenLayers("10");
 
         try {
             mModel.buildClassifier(mData);
-
-
             Evaluation eval = new Evaluation(mData);
             eval.evaluateModel(mModel, mData);
             System.out.println(eval.errorRate()); //Printing Training Mean root squared Error
